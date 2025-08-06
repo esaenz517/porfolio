@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Emmanuel Saenz</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Work+Sans:wght@400;800&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Work+Sans:wght@400;800&display=swap"
+        rel="stylesheet"
+        type="text/css"
+      />
+    </noscript>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="no-scroll-bars">
+    <!-- Home -->
+    <section class="center">
+      <main>
+          <div class="info-container">
+            <!-- Name -->
+            <h1>Emmanuel Saenz</h1>
+          </div>
+      
+        <p class="user-bio"> Aspiring Software Developer </p>
+      </main>
+      <a class="down-arrow" onclick="scrollToSection()">↓</a>
+    </section>
+    <!-- End of Home -->
+
+    <!-- Start of Project -->
+    <section class="center" id="next-section">
+      <main>
+        <div>
+          <h4>Projects</h4>
+        </div>
+
+        <div class="project-grid">
+
+          <div class="project-container">
+            <div class="project-background bng-image1"></div>
+            <div class="project-text">
+              <h3>ITD Schedule Generator</h3>
+              <p class="subtext"> Employee schedule generator and tracker</p>
+              <div class="btn-grid">
+                <a href="https://www.google.com" target="_blank" class="project-options-btn">▶️ Demo</a>
+                <a class="project-options-btn">🐱 GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <div class="project-background bng-image4"></div>
+            <div class="project-text">
+              <h3>Bank Application</h3>
+              <p class="subtext"> A modern bank system website</p>
+              <div class="btn-grid">
+                <a class="project-options-btn">▶️ Demo</a>
+                <a class="project-options-btn">🐱 GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <div class="project-background bng-image3"></div>
+            <div class="project-text">
+              <h3>Job Application Manager</h3>
+              <p class="subtext"> Organized job application tracker</p>
+              <div class="btn-grid">
+                <a class="project-options-btn">▶️ Demo</a>
+                <a class="project-options-btn">🐱 GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <div class="project-background bng-image2"></div>
+            <div class="project-text">
+              <h3>Project comming soon...</h3>
+              <p class="subtext"> ...</p>
+              <div class="btn-grid">
+                <a class="project-options-btn">▶️ Demo</a>
+                <a class="project-options-btn">🐱 GitHub</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </main>
+    </section>
+    <!-- End of Project -->
+
+    <!-- Skills and Technologies -->
+    <section class="center">
+      <main>
+          <div class="info-container">
+            <h4>Skills & Technologies</h4>
+          </div>
+          <div class="skill-grid">
+            <p class="skill-box">C#</p>
+            <p class="skill-box">HTML</p>
+            <p class="skill-box">CSS</p>
+            <p class="skill-box">JavaScript</p>
+            <p class="skill-box">Python</p>
+            <p class="skill-box">Java</p>
+            <p class="skill-box">SQL</p>
+            <p class="skill-box">React</p>
+          </div>
+      </main>
+    </section>
+    <!-- End of Skills and Technologies-->
+
+    <!-- Connect -->
+    <section class="center">
+      <main>
+        <div class="info-content">
+          <h4>Let's Connect</h4>
+        </div>
+        <div>
+          <p>📍 El Paso, Texas</p>
+          <div class="box-grid">
+            <button class="round-box">✉️ Mail</button>
+            <button class="round-box">📝 Resume</button>
+          </div>
+        </div>
+      </main>
+    </section>
+
+
+    <script>
+    function scrollToSection() {
+      const target = document.getElementById("next-section");
+      const offset = 27; // Scrolls 100px *more* than usual (adjust as needed)
+      const top = target.getBoundingClientRect().top + window.scrollY + offset;
+      
+      window.scrollTo({
+        top: top,
+        behavior: 'smooth'
+      });
+    }
+    </script>
+  </body>
+</html>
