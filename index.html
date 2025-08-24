@@ -135,8 +135,8 @@
         <div>
           <p>📍 El Paso, Texas</p>
           <div class="box-grid">
-            <button class="round-box">✉️ Mail</button>
-            <button class="round-box">📝 Resume</button>
+            <button class="round-box" onClick="">✉️ Mail</button>
+            <a href="assets/EmmanuelSaenz_Resume2025.pdf" target="_blank"><button class="round-box">📝 Resume</button></a>
           </div>
         </div>
       </main>
@@ -153,6 +153,13 @@
         top: top,
         behavior: 'smooth'
       });
+    }
+
+    function downloadResume() {
+      const link = document.createElement('a');
+      link.href = 'assest/EmmanuelSaenz_Resume2025.pdf';
+      link.download = "EmmanuelSaenz_Resume2025.pdf";
+      link.click();
     }
     </script>
   </body>
